@@ -1,21 +1,12 @@
-# Backend-Master-Class
+# [Backend #2] Install & use Docker + Postgres + TablePlus to create DB schema
 
-This repository contains the codes of the Backend Master Class course by TECH SCHOOL.
-
-## [Backend #1] Design DB schema and generate SQL code with dbdiagram.io
-
-- Designed using dbdiagram.io
-  - https://dbdiagram.io/d/6272b42f7f945876b6b80516
-
-## [Backend #2] Install & use Docker + Postgres + TablePlus to create DB schema
-
-### Setup Docker
+## Setup Docker
 
 - Get Docker Desktop here:
   - https://www.docker.com/products/docker-desktop/
   - Make sure you have WSL enabled if on windows.
 
-### Setup Postgres
+## Setup Postgres
 
 - Setup Postgres using:
   - docker run --name postgres12 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:12-alpine
@@ -27,7 +18,7 @@ This repository contains the codes of the Backend Master Class course by TECH SC
   - docker exec -it postgres12 dropdb simple_bank
   - Or use `make dropdb`
 
-### Setup TablePlus
+## Setup TablePlus
 
 - Get TablePlus here:
   - https://tableplus.com/windows
