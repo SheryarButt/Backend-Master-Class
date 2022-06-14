@@ -19,4 +19,7 @@ initsqlc:
 generatesqlc:
 	docker run --rm -v "$(pwd):/src" -w /src kjconroy/sqlc generate
 
-.Phony: postgres createdb dropdb migrateup migratedown initsqlc generatesqlc
+test: 
+	go test -v -cover ./...
+
+.Phony: postgres createdb dropdb migrateup migratedown initsqlc generatesqlc test
